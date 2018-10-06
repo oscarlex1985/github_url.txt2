@@ -1,0 +1,215 @@
+/* Cuerpo de toda la hoja html*/
+body{
+  background-color: #02010a;
+  font-family: 'Dancing Script';
+
+}
+
+/* Estilos para tipo de  fuente */
+@font-face {
+
+  {
+    font-family: 'Dancing Script';
+   src: url(../fuente/DancingScript-Regu.ttf);
+  }
+
+}
+
+/*Encabezado de la pagina*/
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #5b7989;
+  color: white;
+  text-align: center;
+  animation-duration: 1s;
+  animation-name: slidein;
+  border-radius: 40px 40px 0px 0;
+  text-shadow: 2px 2px #02010a;
+  font-family: 'Dancing Script';
+
+}
+
+/*Etiquetas de parrafo*/
+.titulo, .navegacion{
+margin: auto;
+}
+
+/* Seccion de la primera imagen*/
+.section1{
+text-align: center;
+width: 100%;
+background-color: #82c3a6;
+padding-top:40px;
+
+}
+
+
+/* Seccion de la segunda imagen 2 y 3 */
+.section2{
+background-color:#d5c75f;
+width: 100%;
+display: flex;
+flex-direction: row;
+border: 1px;
+justify-content: space-around;
+font-size: 1.5em;
+font-weight: bold;
+
+}
+
+
+.imagen2, .imagen3{
+  margin-top: 40px;
+  text-align: center;
+
+}
+
+a{
+  color: white;
+  font-size: 25px;
+
+}
+
+/*Pie de pagina*/
+footer{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+text-align: justify;
+  background-color:#C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 20px;
+}
+
+.contacto,.terminos,.social,.derechos{
+  width: 25%;
+
+}
+
+/*Efectos dela imagenes */
+.imagen2 img:hover{
+  transform: rotate(10deg);
+  transition: width, 2s;
+  -webkit-filter:drop-shadow(2px 2px 2px #82c3a6);
+  border: 2px;
+}
+
+.imagen3:hover{
+  transform: translate(20px, 5px);
+  -webkit-filter:drop-shadow(5px 20px 0px #82c3a6);
+  transition:2s;
+  border: 2px;
+  }
+
+
+/*Efectos de paginas*/
+@keyframes slidein {
+0% {
+margin-top: 150%;
+}
+
+60% {
+margin-top: -5%;
+}
+
+100% {
+margin-top: 0%;
+}
+}
+
+/*Version Movil para */
+@media screen and (max-width:600px)
+{
+  header{
+    flex-direction: column;
+
+  }
+
+footer{
+width: 100%;
+flex-direction: column;
+}
+
+a{
+
+}
+.section2{
+flex-direction: column;
+
+
+}
+
+.contacto,.terminos,.social,.derechos{
+  width: 100%;
+}
+
+.imagen2, .imagen3 {
+  text-align: center;
+}
+
+.imagen2 img, .imagen3 img{
+  width: 95%;
+  padding-top: 20px;
+}
+
+.section1 img{
+  width: 95%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.social img{
+  border-radius: 10px 10px 10px 10px;
+}
+
+}
+
+@media screen (max-width:900px){
+
+  header{
+    flex-direction: column;
+
+  }
+
+  footer{
+  width: 100%;
+  flex-direction: column;
+  }
+
+  a{
+
+  }
+  .section2{
+  flex-direction: column;
+
+
+  }
+
+  .contacto,.terminos,.social,.derechos{
+  width: 100%;
+  }
+
+  .imagen2, .imagen3 {
+  text-align: center;
+  }
+
+  .imagen2 img, .imagen3 img{
+  width: 95%;
+  margin-top: 40px;
+
+  }
+
+  .section1 img{
+  width: 95%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  }
+
+  .social img{
+  border-radius: 10px 10px 10px 10px;
+  }
+
+}

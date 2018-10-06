@@ -1,0 +1,233 @@
+body{
+  background-color: #02010a;
+  font-family: 'Dancing Script';
+}
+
+}
+
+/* Estilos para tipo de  fuente */
+@font-face {
+
+  {
+    font-family: 'Dancing Script';
+   src: url(../fuente/DancingScript-Regu.ttf);
+  }
+
+}
+
+/*Encabezado de la pagina*/
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #5b7989;
+  color: white;
+  text-align: center;
+  animation-duration: 1s;
+  animation-name: slidein;
+  border-radius: 40px 40px 0px 0;
+  text-shadow: 2px 2px #02010a;
+  font-family: 'Dancing Script';
+
+}
+/*Etiquetas de parrafo alinear el titulo y los enlaces*/
+.titulo, .navegacion{
+margin: auto;
+}
+
+.section1{
+background-color:#d5c75f;
+width: 100%;
+display: flex;
+flex-direction: row;
+border: 1px;
+justify-content: space-around;
+}
+.section2{
+background-color:#d5c75f;
+width: 100%;
+display: flex;
+flex-direction: row;
+border: 1px;
+justify-content: space-around;
+}
+.imagen1,.imagen2, .imagen3,.imagen4, .imagen5, .imagen6{
+  margin-top: 40px;
+  text-align: center;
+}
+
+a{
+  color: white;
+  font-size: 25px;
+}
+/*Pie de pagina*/
+footer{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+text-align: justify;
+  background-color:#C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 20px;
+}
+/*Con esto alineamos todo el pie de pagina al total del ancho de la pantalla footer*/
+.contacto,.terminos,.social,.derechos{
+  width: 25%;
+}
+
+
+.imagen1 img, .imagen2 img, .imagen3 img{
+  width: 90%;
+  margin-top: 10px;
+}
+
+.imagen4 img, .imagen5 img, .imagen6 img{
+  width: 90%;
+  margin-top: 10px;
+}
+.imagen1 img{
+  filter: blur(10px);
+}
+.imagen2 img,.imagen4 img,.imagen6 img{
+  filter: grayscale(100%);
+}
+.imagen3 img{
+  filter: sepia(90%);
+}
+
+@media screen and (max-width:600px)
+{
+  header{
+    flex-direction: column;
+
+  }
+
+footer{
+width: 100%;
+flex-direction: column;
+}
+
+a{
+
+}
+.section1{
+flex-direction: column;
+}
+.section2{
+flex-direction: column;
+}
+
+
+.contacto,.terminos,.social,.derechos{
+  width: 100%;
+}
+
+.imagen1,.imagen2, .imagen3,.imagen4,.imagen5,.imagen6 {
+  text-align: center;
+}
+
+.imagen1 img,.imagen2 img,.imagen3 img, .imagen4 img, .imagen5 img, .imagen6 img{
+  width: 95%;
+  padding-top: 20px;
+}
+
+.section1 img{
+  width: 95%;
+
+}
+.section2 img{
+  width: 95%;
+
+}
+
+.social img{
+  border-radius: 10px 10px 10px 10px;
+}
+
+}
+
+.imagen1 img{
+  filter: blur(10px);
+}
+.imagen2 img,.imagen4 img,.imagen6 img{
+  filter: grayscale(100%);
+}
+.imagen3 img{
+  filter: sepia(90%);
+}
+
+@media screen (max-width:900px){
+
+  header{
+    flex-direction: column;
+
+  }
+
+footer{
+width: 100%;
+flex-direction: column;
+}
+
+a{
+
+}
+.section1{
+flex-direction: column;
+}
+.section2{
+flex-direction: column;
+}
+
+
+.contacto,.terminos,.social,.derechos{
+  width: 100%;
+}
+
+.imagen1,.imagen2, .imagen3,.imagen4,.imagen5,.imagen6 {
+  text-align: center;
+}
+
+.imagen1 img,.imagen2 img,.imagen3 img, .imagen4 img, .imagen5 img, .imagen6 img{
+  width: 95%;
+  padding-top: 20px;
+}
+
+.section1 img{
+  width: 95%;
+
+}
+.section2 img{
+  width: 95%;
+
+}
+
+.social img{
+  border-radius: 10px 10px 10px 10px;
+}
+
+}
+
+/*Efectos de paginas*/
+@keyframes slidein {
+0% {
+margin-top: 150%;
+}
+
+60% {
+margin-top: -5%;
+}
+
+100% {
+margin-top: 0%;
+}
+}
+.imagen1 img{
+  filter: blur(10px);
+}
+.imagen2 img,.imagen4 img,.imagen6 img{
+  filter: grayscale(100%);
+}
+.imagen3 img{
+  filter: sepia(90%);
+}
